@@ -1,0 +1,17 @@
+{
+  "name": "superior-kmeans",
+  "version": "0.0.1",
+  "description": "K-Means impementation for multidimensional numerical vectors",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha lib/**/*.spec.js --debug-brk"
+  },
+  "author": "Dylan Britt",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.7.2",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.3.1",
+    "mocha": "^3.5.3"
+  }
+}
