@@ -4,12 +4,12 @@ const mocha = require('gulp-mocha');
 
 gulp.task('watch', function() {
     // Watch .spec.js files
-    gulp.watch('lib/**/*.js', ['mocha']);
+    gulp.watch('lib/**/*.js', ['mocha-debug']);
 });
 
-gulp.task('mocha', () => {
+gulp.task('mocha-debug', () => {
     gulp.src('lib/**/*.spec.js')
-        .pipe(mocha())
+        .pipe(mocha({debugBrk: true}))
         .once('error', () => {
             process.exit(1);
         })

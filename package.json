@@ -4,7 +4,7 @@
   "description": "K-Means impementation for multidimensional numerical vectors",
   "main": "index.js",
   "scripts": {
-    "test": "mocha lib/**/*.spec.js --debug-brk"
+    "test": "mocha lib/**/*.spec.js"
   },
   "author": "Dylan Britt",
   "license": "MIT",
