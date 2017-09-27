@@ -4,7 +4,18 @@ const mocha = require('gulp-mocha');
 
 gulp.task('watch', function() {
     // Watch .spec.js files
-    gulp.watch('lib/**/*.js', ['mocha-debug']);
+    gulp.watch('lib/**/*.js', ['mocha']);
+});
+
+gulp.task('mocha', () => {
+    gulp.src('lib/**/*.spec.js')
+        .pipe(mocha())
+        .once('error', () => {
+            process.exit(1);
+        })
+        .once('end', () => {
+            process.exit();
+        });
 });
 
 gulp.task('mocha-debug', () => {
