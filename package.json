@@ -1,13 +1,25 @@
 {
-  "name": "superior-kmeans",
-  "version": "0.0.1",
+  "name": "superior-k-means",
+  "version": "0.0.2",
   "description": "K-Means impementation for multidimensional numerical vectors",
   "main": "index.js",
   "scripts": {
     "test": "mocha lib/**/*.spec.js"
   },
-  "author": "Dylan Britt",
-  "license": "MIT",
+  "author": "Dylan Britt <dylanbritt@gmail.com>",
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dylanbritt/superior-k-means"
+  },
+  "bugs": {
+    "url":  "https://github.com/dylanbritt/superior-k-means/issues"
+  },
+  "keywords": [
+    "k-means",
+    "machine learning",
+    "clustering"
+  ],
   "devDependencies": {
     "eslint": "^4.7.2",
     "gulp": "^3.9.1",
