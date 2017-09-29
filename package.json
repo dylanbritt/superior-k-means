@@ -1,6 +1,6 @@
 {
   "name": "superior-k-means",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "K-Means impementation for multidimensional numerical vectors",
   "main": "index.js",
   "scripts": {
